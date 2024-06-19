@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const BarChart = () => {
+const BarChart = ({data}) => {
     return (
         <BarChart />
     )
