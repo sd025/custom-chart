@@ -1,14 +1,17 @@
 import { useState } from "react";
 import BarChart from "./BarChart";
+import { CHART_DATA } from "./data";
 
 export default function App() {
-    const [showChart, setShowChart] = useState(false)
+    const [showChart, setShowChart] = useState(true)
 
     return (
     <main>
         <button>Toggle Chart</button>
+        <button onClick={() => setShowChart(prev => !prev)}>Toggle Chart</button>
         {showChart ? 
-        <BarChart /> : null}
+            <BarChart data={CHART_DATA} /> : null
+        }
     </main>
     )
 }
