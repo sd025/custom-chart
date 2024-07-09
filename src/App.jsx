@@ -1,7 +1,7 @@
 import { useState } from "react";
 import BarChart from "./BarChart";
 import { CHART_DATA } from "./data";
-
+import './App.css'
 export default function App() {
     const [showChart, setShowChart] = useState(true)
 
